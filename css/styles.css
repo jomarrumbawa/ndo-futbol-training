@@ -1,7 +1,3 @@
-/* 
-off white: #fffded
-light purple: #4f4789
-*/
 :root {
   --color-white: #fffded;
   --color-light-gray: #fcfbff;
@@ -74,6 +70,38 @@ section {
   }
 }
 
+.mission {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  color: var(--color-dark-gray);
+}
+
+.mission-title {
+  font-size: 1.375rem;
+}
+
+.mission-title:after {
+  content: "";
+  display: block;
+  width: 25%;
+  border-bottom: 6px solid var(--color-purple);
+  margin-block: 0.5em;
+}
+
+.mission-subtext {
+  font-size: 0.875rem;
+  margin-bottom: 0.75em;
+}
+
+.mission-btn {
+  display: inline-block;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.625em 1.5em;
+  border-radius: 4px;
+}
 .testimonials-wrapper {
   text-align: center;
 }
