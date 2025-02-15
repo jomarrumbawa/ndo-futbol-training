@@ -1,3 +1,14 @@
+/* 
+off white: #fffded
+light purple: #4f4789
+*/
+:root {
+  --color-white: #fffded;
+  --color-light-gray: #fcfbff;
+  --color-dark-gray: #646464;
+  --color-purple: #4f4789;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +32,7 @@ img {
 .header {
   padding-block: 25px;
 }
+
 .header-logo {
   height: 50px;
   width: auto;
@@ -49,7 +61,11 @@ img {
   text-align: center;
 }
 
-.reviews {
+section {
+  padding-block: 75px;
+}
+
+.reviews-wrapper {
   display: grid;
   gap: 1em;
 
@@ -58,18 +74,42 @@ img {
   }
 }
 
-.review-card {
-  font-size: 0.875rem;
-  max-inline-size: 600px;
-  margin-inline: auto;
-  border-radius: 10px;
-  padding: 2em;
+.testimonials-wrapper {
   text-align: center;
-  box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.review-card img {
-  width: 75px;
-  margin-inline: auto;
-  border-radius: 50%;
+.testimonials {
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+
+.testimonials-card {
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-gray);
+  padding: 1em;
+  border-radius: 0.5em;
+  text-align: left;
+}
+
+/* .testimonials-card img {
+  fill: var(--color-purple);
+} */
+
+.testimonials-card .author {
+  margin-top: 1.5em;
+  font-size: 0.75rem;
+}
+
+.footer {
+  background-color: #4f4789;
+  color: #fffded;
+  text-align: center;
+  padding-block: 3em;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
