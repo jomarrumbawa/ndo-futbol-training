@@ -78,7 +78,7 @@ img {
   background-size: cover;
   height: 700px;
   width: 1200px;
-  border-radius: 6px;
+  border-radius: 4px;
   margin-inline: auto;
   padding: 50px;
 }
@@ -143,6 +143,49 @@ section {
   border-radius: 4px;
 }
 
+.mission img {
+  border-radius: 4px;
+}
+
+.focuses {
+  background-color: var(--color-purple);
+  color: var(--color-light-gray);
+}
+
+.focuses-title,
+.focuses-subtext {
+  text-align: center;
+}
+
+.focuses-subtext {
+  margin-bottom: 36px;
+}
+
+.focus-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.focus-card {
+  background-color: #564e96;
+  padding: 1.5em;
+  border-radius: 4px;
+}
+
+.focus-card img {
+  margin-bottom: 30px;
+}
+
+.focus-card-title {
+  font-size: 1.125rem;
+}
+
+.focus-card-text {
+  font-size: 0.75rem;
+  text-wrap: balance;
+}
+
 .testimonials-wrapper {
   text-align: center;
   color: var(--color-dark-gray);
@@ -205,11 +248,14 @@ section {
 .contact-form input {
   padding: 0.75em 1.5em;
   border: 1px solid var(--color-dark-gray);
+  border-radius: 4px;
 }
 
 .contact-form textarea {
   padding: 0.75em 1.5em;
+  border-radius: 4px;
   font-family: inherit;
+  resize: none;
 }
 
 .contact-form button {
@@ -219,6 +265,7 @@ section {
   border: none;
   text-transform: uppercase;
   letter-spacing: 2;
+  border-radius: 4px;
 }
 
 .footer {
